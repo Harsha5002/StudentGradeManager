@@ -1,12 +1,9 @@
 import java.util.*;
 
-// A simple student grade manager
-// Written by Harsha Paul
-// This program lets you add students, assign marks, and check results
+
 
 public class StudentGradeManager {
 
-    // I'm using a LinkedHashMap so insertion order is preserved
     static Map<String, List<Integer>> studentData = new LinkedHashMap<>();
 
     public static void main(String[] args) {
@@ -94,7 +91,6 @@ public class StudentGradeManager {
         }
     }
 
-    // Simple grading logic — can be customized
     static String getGrade(double avg) {
         if (avg >= 90) return "A+";
         else if (avg >= 80) return "A";
